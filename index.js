@@ -72,7 +72,9 @@ app.get('/api/:country/:date', (req, res, next) => {
   res.json(output)
 })
 
-// Default Error Handler
+
+
+// Default Error Handler changing somethings in index
 app.use((err, req, res, next) => {
   res.status(500).json({ message: `Server Error: ${err}`})
   console.dir(err);
